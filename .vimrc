@@ -151,9 +151,13 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+set encoding=utf-8
+set fileformats=unix,dos,mac
+
 let g:coc_global_extensions = [
       \'coc-jedi',
       \'coc-json',
-      \'coc-markdownlint'
+      \'coc-markdownlint',
+      \'coc-phpls'
 \]
 
