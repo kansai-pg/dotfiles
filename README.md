@@ -1,5 +1,11 @@
-# my-vim-docker
+# dotfile 
 
-自分用vim環境構築セット  
-PythonとPHPの補完機能をセットアップ済み  
+自分用環境セット  
+使うには以下の記述が必要
+
+``` bash
+ if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+```
 
