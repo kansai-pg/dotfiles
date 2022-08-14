@@ -1,4 +1,6 @@
 #https://asukiaaa.blogspot.com/2020/07/docker-python-pip-install-without-rebuilding.html
+#https://rheb.hatenablog.com/entry/podman3-rootless-docker-compose
+
 alias pythontest='docker run --rm -it \
     -v pip-lib:/pip-lib \
     -v pip-cache:/root/.cache/pip \
