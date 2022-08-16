@@ -7,7 +7,7 @@ alias pythontest='docker run --rm -it \
     -v "$PWD:/$PWD:z" \
     -w "/$PWD" \
     -e  PYTHONUSERBASE=/pip-lib \
-    kansaipg/docker-coc.nvim:python-jedi python3'
+    kansaipg/docker-coc.nvim:python-jedi-php python3'
 
 alias piptest='docker run --rm -it \
     -v pip-lib:/pip-lib \
@@ -15,7 +15,7 @@ alias piptest='docker run --rm -it \
     -v "$PWD:/$PWD:z" \
     -w "/$PWD" \
     -e  PYTHONUSERBASE=/pip-lib \
-     kansaipg/docker-coc.nvim:python-jedi pip'
+     kansaipg/docker-coc.nvim:python-jedi-php pip'
 
 alias vimtest='docker run --rm -it \
     -v pip-lib:/pip-lib \
@@ -24,4 +24,4 @@ alias vimtest='docker run --rm -it \
     -w "/$PWD" \
     -e  PYTHONUSERBASE=/pip-lib \
     -v ~/.docker-vimrc:/root/.vimrc \
-    kansaipg/docker-coc.nvim:python-jedi vim'
+    kansaipg/docker-coc.nvim:python-jedi-php vim'
