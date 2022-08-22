@@ -1,7 +1,7 @@
 #https://asukiaaa.blogspot.com/2020/07/docker-python-pip-install-without-rebuilding.html
 #https://rheb.hatenablog.com/entry/podman3-rootless-docker-compose
 
-alias pythontest='docker run --rm -it \
+alias python-docker='docker run --rm -it \
     -v pip-lib:/pip-lib \
     -v pip-cache:/root/.cache/pip \
     -v "$PWD:/$PWD:z" \
@@ -9,7 +9,7 @@ alias pythontest='docker run --rm -it \
     -e  PYTHONUSERBASE=/pip-lib \
     kansaipg/docker-coc.nvim:python-jedi-php python3'
 
-alias piptest='docker run --rm -it \
+alias pip-docker='docker run --rm -it \
     -v pip-lib:/pip-lib \
     -v pip-cache:/root/.cache/pip \
     -v "$PWD:/$PWD:z" \
@@ -17,7 +17,7 @@ alias piptest='docker run --rm -it \
     -e  PYTHONUSERBASE=/pip-lib \
      kansaipg/docker-coc.nvim:python-jedi-php pip'
 
-alias vimtest='docker run --rm -it \
+alias vim-docker='docker run --rm -it \
     -v pip-lib:/pip-lib \
     -v pip-cache:/root/.cache/pip \
     -v "$PWD:/$PWD:z" \
