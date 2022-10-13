@@ -23,5 +23,4 @@ alias vim-docker='docker run --rm -it \
     -v "$PWD:/$PWD:z" \
     -w "/$PWD" \
     -e  PYTHONUSERBASE=/pip-lib \
-    -v ~/.docker-vimrc:/root/.vimrc \
     kansaipg/docker-coc.nvim:python-jedi-php vim'
